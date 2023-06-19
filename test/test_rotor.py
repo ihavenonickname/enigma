@@ -10,37 +10,31 @@ class TestRotor(TestCase):
 
         # Example 1
         rotor = Rotor.Rotor_I(char_to_idx('A'))
+        given = 0
         expected = 4
-        actual = rotor.right_to_left(0)
+        actual = rotor.right_to_left(given)
         self.assertEqual(expected, actual)
 
         # Example 2
         rotor = Rotor.Rotor_I(char_to_idx('B'))
+        given = 0
         expected = 10
-        actual = rotor.right_to_left(0)
+        actual = rotor.right_to_left(given)
         self.assertEqual(expected, actual)
 
         # Example 3
         rotor = Rotor.Rotor_I(char_to_idx('A'))
+        given = 0
         expected = 20
-        actual = rotor.left_to_right(0)
+        actual = rotor.left_to_right(given)
         self.assertEqual(expected, actual)
 
         # Example 4
         rotor = Rotor.Rotor_I(char_to_idx('B'))
+        given = 0
         expected = 22
-        actual = rotor.left_to_right(0)
+        actual = rotor.left_to_right(given)
         self.assertEqual(expected, actual)
-
-
-# w2 = Rotor.Rotor_I(char_to_idx('B'))
-# print(w2.right_to_left(0))
-
-# w3 = Rotor.Rotor_I(char_to_idx('A'))
-# print(w3.left_to_right(0))
-
-# w4 = Rotor.Rotor_I(char_to_idx('B'))
-# print(w4.left_to_right(0))
 
 # w5 = Rotor.Rotor_III(char_to_idx('O'))
 # print(w5.right_to_left(14))
