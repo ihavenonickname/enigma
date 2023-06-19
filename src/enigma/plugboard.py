@@ -2,7 +2,7 @@ from .helper import ALPHABET_SIZE, char_to_idx
 
 
 class Plugboard():
-    def __init__(self, config: list[tuple[int, int]] | list[tuple[str, str]]):
+    def __init__(self, *, config: list[tuple[int, int]] | list[tuple[str, str]]):
         self._memo = list(range(ALPHABET_SIZE))
 
         for a, b in config:
