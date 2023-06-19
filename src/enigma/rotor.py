@@ -1,4 +1,4 @@
-from .helper import ALPHABET_SIZE, char_to_idx
+from .helper import ALPHABET_SIZE, char_to_idx, string_to_idx
 
 
 class Rotor():
@@ -34,7 +34,7 @@ class Rotor():
             offset = char_to_idx(offset)
 
         return Rotor(
-            connections=list(map(char_to_idx, 'EKMFLGDQVZNTOWYHXUSPAIBRCJ')),
+            connections=string_to_idx('EKMFLGDQVZNTOWYHXUSPAIBRCJ'),
             notch=char_to_idx('R'),
             offset=offset)
 
@@ -44,7 +44,7 @@ class Rotor():
             offset = char_to_idx(offset)
 
         return Rotor(
-            connections=list(map(char_to_idx, 'AJDKSIRUXBLHWTMCQGZNPYFVOE')),
+            connections=string_to_idx('AJDKSIRUXBLHWTMCQGZNPYFVOE'),
             notch=char_to_idx('F'),
             offset=offset)
 
@@ -54,6 +54,6 @@ class Rotor():
             offset = char_to_idx(offset)
 
         return Rotor(
-            connections=list(map(char_to_idx, 'BDFHJLCPRTXVZNYEIWGAKMUSQO')),
+            connections=string_to_idx('BDFHJLCPRTXVZNYEIWGAKMUSQO'),
             notch=char_to_idx('W'),
             offset=offset)

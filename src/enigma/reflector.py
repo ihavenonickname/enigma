@@ -1,4 +1,4 @@
-from .helper import char_to_idx
+from .helper import string_to_idx
 
 
 class Reflector():
@@ -10,12 +10,12 @@ class Reflector():
 
     @staticmethod
     def Ukw_A():
-        return Reflector(list(map(char_to_idx, 'EJMZALYXVBWFCRQUONTSPIKHGD')))
+        return Reflector(string_to_idx('EJMZALYXVBWFCRQUONTSPIKHGD'))
 
     @staticmethod
     def Ukw_B():
-        return Reflector(list(map(char_to_idx, 'YRUHQSLDPXNGOKMIEBFZCWVJAT')))
+        return Reflector(string_to_idx('YRUHQSLDPXNGOKMIEBFZCWVJAT'))
 
     @staticmethod
     def Ukw_C():
-        return Reflector(list(map(char_to_idx, 'FVPJIAOYEDRZXWGCTKUQSBNMHL')))
+        return Reflector(string_to_idx('FVPJIAOYEDRZXWGCTKUQSBNMHL'))
