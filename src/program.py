@@ -45,13 +45,12 @@ def parse_plugboard_argument(expr_list):
     connections = []
 
     for expr in expr_list:
-        m = re.match(r'(a-z)(a-z)$', expr, re.IGNORECASE)
+        m = re.match(r'[a-z]{2}$', expr, re.IGNORECASE)
 
         if not m:
             raise Exception('Invalid plugboard connection: ' + expr)
 
-        a = m.group(1).upper()
-        b = m.group(2).upper()
+        a, b = m.group(0).upper()
 
         connections.append((a, b))
 
